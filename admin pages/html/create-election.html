@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Election</title>
+    <link rel="stylesheet" href="../css/create-election.css">
+</head>
+<body>
+    <a id="back" href="admin-dashboard.html">Back</a>
+    <div class="create-election-container">
+        <h2>Create New Election</h2>
+        <form action="#" method="POST">
+            <label for="election-name">Election Name:</label>
+            <input type="text" id="election-name" name="election-name" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="datetime-local" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="datetime-local" id="end-date" name="end-date" required>
+
+            <label for="candidates">Candidates (comma-separated):</label>
+            <textarea id="candidates" name="candidates" rows="4" required></textarea>
+
+            <button type="submit">Create Election</button>
+        </form>
+    </div>
+    <script src="../js/create-election.js"></script>
+</body>
+</html>

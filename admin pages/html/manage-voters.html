@@ -1,0 +1,27 @@
+<!-- File: manage-voters.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Voters</title>
+    <link rel="stylesheet" href="../css/manage-voters.css">
+</head>
+<body>
+    <a id="back" href="admin-dashboard.html">Back</a>
+    <div class="manage-voters">
+        <h2>Manage Voters</h2>
+        <form id="add-voter-form">
+            <label for="voter-name">Voter Name:</label>
+            <input type="text" id="voter-name" name="voter-name" required>
+
+            <label for="voter-id">Voter ID:</label>
+            <input type="text" id="voter-id" name="voter-id" required>
+
+            <button type="submit">Add Voter</button>
+        </form>
+        <div id="voter-list"></div>
+    </div>
+    <script src="../js/manage-voters.js"></script>
+</body>
+</html>
